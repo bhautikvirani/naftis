@@ -1,0 +1,30 @@
+api:
+  image:
+    repository: sevennt/naftis-api
+    tag: latest
+    pullPolicy: IfNotPresent
+  log:
+    level: info
+  cache:
+    size: 100
+  retrieval:
+    scrapeInterval: 10s
+    scrapeTimeout: 8s
+  replicaCount: 1
+  service:
+    externalPort: 80
+    internalPort: 50000
+  storage:
+    class: standard
+    size: 5Gi
+    retention: 24h
+  config:
+ui:
+  service:
+    externalPort: 80
+    internalPort: 80
+  replicaCount: 1
+  image:
+    repository: sevennt/naftis-ui
+    tag: latest
+    pullPolicy: IfNotPresent

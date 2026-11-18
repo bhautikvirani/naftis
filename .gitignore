@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+*.swp
+*.log
+bin/*
+*.tar.gz
+target/*
+src/ui/dist/*
+dist/*
+.cache/
+package-lock.json
+node_modules/
+.env
+naftis.yaml
+mysql.yaml
+mysql-cloud.yaml
